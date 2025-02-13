@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(135deg, #4b0082, #40e0d0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+}
+header {
+    margin-bottom: 20px;
+}
+header h1 {
+    font-size: 2.5rem;
+    color: #fcfbfb;
+    text-align: center;
+    animation: bounceIn 1s ease-out;
+}
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.cell {
+    background-color: #74b9ff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.cell:hover {
+    background-color: #06eafa;
+    transform: scale(1.1);
+}
+#game-info {
+    text-align: center;
+}
+#current-player {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #100101;
+}
+#reset-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #fdcb6e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#reset-button:hover {
+    background-color: #13aff3;
+    transform: scale(1.1);
+}
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #f8f8f8;
+}
+footer .emoji {
+    animation: spin 4s linear infinite;
+}
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

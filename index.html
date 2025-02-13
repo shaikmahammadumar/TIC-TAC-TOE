@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XO Battle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>🎮 XO Battle 🕹️</h1>
+    </header>
+    <main>
+        <div id="game-container">
+            <div id="game-board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+            <div id="game-info">
+                <p>Current Player: <span id="current-player"> X </span></p>
+                <button id="reset-button">🔄 Reset Game</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 XO Battle. All rights reserved. <span class="emoji">🎉</span></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
